@@ -3,7 +3,7 @@ const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close');
 /*===== MENU SHOW =====*/
-/* Validate if constant exists */
+/* Valida se a constante existe */
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
@@ -11,7 +11,7 @@ if (navToggle) {
 }
 
 /*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
+/* Valida se a constante existe */
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
@@ -23,7 +23,7 @@ const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
+    //quando clicar em cada nav__link, remove a classe show-menu
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -157,7 +157,7 @@ window.addEventListener('scroll', scrollHeader)
 
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    // Quando o scroll for maior que 560 vh adiciona uma classe que mostra o menu
     if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
@@ -167,3 +167,27 @@ const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
 
+//Salva o icone e o tema no local storage
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// Muda a interface do tema validando a classe dark-theme
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = ()  => themeButton.classList.contains(iconTheme) ? 'uil-mon' : 'uil-sun'
+
+// valida a escolha do usuário
+if (selectedTheme) {
+    // valida o clique no botão através da classe
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](iconTheme)
+}
+
+//Ativa ou desativa o tema manualmente com o botão
+themeButton.addEventListener('click', () => {
+    // adiciona e remove o botão/icone
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    // Salva o tema e o icone que o usuário escolhe no Local Storage
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
