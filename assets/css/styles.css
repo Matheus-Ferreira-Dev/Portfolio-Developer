@@ -244,9 +244,10 @@ img {
 .active-link {
   color: var(--first-color);
 }
+
 /* Change background header */
 .scroll-header {
-  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
   background-color: #fff;
 }
 
@@ -810,132 +811,135 @@ img {
 
 /*==================== TESTIMONIAL ====================*/
 .testimonial__data,
-.testimonial__header{
+.testimonial__header {
   display: flex;
 }
 
-.testimonial__data{
+.testimonial__data {
   justify-content: space-between;
   margin-bottom: var(--mb-1);
 }
 
-.testimonial__img{
+.testimonial__img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   margin-right: var(--mb-0-75);
 }
 
-.testimonial__name{
+.testimonial__name {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
 }
 
-.testimonial__client{
+.testimonial__client {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
 
-.testimonial__description{
+.testimonial__description {
   margin-bottom: var(--mb-2-5);
 }
 
-.testimonial__icon-star{
+.testimonial__icon-star {
   color: var(--first-color);
 }
 
-.swiper, .swiper-pagination-testimonial{
-bottom: 0;
+.swiper,
+.swiper-pagination-testimonial {
+  bottom: 0;
 }
+
 /*==================== CONTACT ME ====================*/
-.contact__container{
+.contact__container {
   row-gap: 3rem;
 }
 
-.contact__information{
+.contact__information {
   display: flex;
   margin-bottom: var(--mb-2);
 }
 
-.contact__icon{
+.contact__icon {
   font-size: 2rem;
   color: var(--first-color);
   margin-right: var(--mb-0-75);
 }
 
-.contact__tile{
+.contact__tile {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
 }
 
-.contact__subtitle{
+.contact__subtitle {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
 
-.contact__content{
+.contact__content {
   /* background-color: var(--input-color); */
   border-radius: .5rem;
   padding: .75rem 1rem .25rem;
 }
 
-.contact__label{
-font-size: var(--smaller-font-size);
-color: var(--title-color);
+.contact__label {
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
 }
 
-.contact__input{
+.contact__input {
   width: 100%;
   /* background-color:rgba(156, 156, 156, 0); */
   font-family: var(--body-color);
-  outline:none;
+  outline: none;
   border: none;
   padding: .25rem .5rem .5rem 0;
   border-bottom: 1px solid #000;
 }
+
 /*==================== FOOTER ====================*/
-.footer{
+.footer {
   padding-top: 2rem;
 }
 
-.footer__container{
+.footer__container {
   row-gap: 3.5rem;
 }
 
-.footer__bg{
+.footer__bg {
   background-color: var(--first-color);
   padding: 2rem 0 3rem;
 }
 
-.footer__title{
+.footer__title {
   font-size: var(--h1-font-size);
   margin-bottom: var(--mb-0-25);
 }
 
-.footer__subtitle{
+.footer__subtitle {
   font-size: var(--small-font-size);
 }
 
-.footer__links{
+.footer__links {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
 }
 
-.footer__link:hover{
+.footer__link:hover {
   color: var(--text-color);
 }
 
-.footer__social{
+.footer__social {
   font-size: 1.25rem;
   margin-right: var(--mb-1-5);
 }
 
-.footer__social:hover{
+.footer__social:hover {
   color: var(--text-color);
 }
 
-.footer__copy{
+.footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--color-details);
@@ -945,13 +949,13 @@ color: var(--title-color);
 .footer__title,
 .footer__subtitle,
 .footer__link,
-.footer__social{
+.footer__social {
   color: #fff;
 }
 
 
 /*========== SCROLL UP ==========*/
-.scrollup{
+.scrollup {
   position: fixed;
   right: 1rem;
   bottom: -20%rem;
@@ -963,16 +967,17 @@ color: var(--title-color);
   transition: .4s;
 }
 
-.scrollup:hover{
+.scrollup:hover {
   background-color: #0A2239;
 }
 
-.scrollup__icon{
+.scrollup__icon {
   font-size: 2rem;
   color: #fff;
 }
+
 /* Show scroll */
-.show-scroll{
+.show-scroll {
   bottom: 5rem;
 }
 
