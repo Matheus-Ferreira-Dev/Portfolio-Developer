@@ -21,8 +21,8 @@
   --input-color: hsl(var(--hue-color), 70%, 80%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --scroll-bar-color: hsl(var(--hue-color), 70%, 50%);
+  --scroll-thumb-color: hsl(var(--hue-color), 30%, 20%);
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -1007,7 +1007,21 @@ img {
 }
 
 /*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
 
+::-webkit-scrollbar-thumb{
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #fff;
+}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
