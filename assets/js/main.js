@@ -162,7 +162,7 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
@@ -173,7 +173,7 @@ const selectedIcon = localStorage.getItem('selected-icon')
 
 // Muda a interface do tema validando a classe dark-theme
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = ()  => themeButton.classList.contains(iconTheme) ? 'uil-mon' : 'uil-sun'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-mon' : 'uil-sun'
 
 // valida a escolha do usuário
 if (selectedTheme) {

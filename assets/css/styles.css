@@ -7,7 +7,8 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 354;/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 354;
+  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* CORES */
   --first-color: hsl(var(--hue-color), 99%, 38%);
@@ -15,7 +16,7 @@
   --first-color-alt: hsl(var(--hue-color), 75%, 30%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 75%);
   --color-details: #ffffff;
-  --title-color:  hsl(var(--hue-color), 15%, 15%);
+  --title-color: hsl(var(--hue-color), 15%, 15%);
   --text-color: hsl(var(--hue-color), 10%, 30%);
   --text-color-light: rgba(39, 39, 39, 0);
   --input-color: hsl(var(--hue-color), 70%, 80%);
@@ -71,33 +72,34 @@
 }
 
 /*========== Variables Dark theme ==========*/
-body.dark-theme{
+body.dark-theme {
   /* CORES */
   --first-color-second: hsl(var(--hue-color), 90%, 10%);
   --color-details: #ffffff;
-  --title-color:  hsl(var(--hue-color), 10%, 90%);
+  --title-color: hsl(var(--hue-color), 10%, 90%);
   --text-color: hsl(var(--hue-color), 10%, 90%);
   --input-color: hsl(var(--hue-color), 90%, 80%);
   --body-color: hsl(var(--hue-color), 5%, 5%);
-  --container-color: hsl(var(--hue-color), 10%, 10%);;
+  --container-color: hsl(var(--hue-color), 10%, 10%);
+  ;
 
 }
 
 
 /*========== Button Dark/Light ==========*/
-.nav__btns{
+.nav__btns {
   display: flex;
   align-items: center;
 }
 
-.change-theme{
+.change-theme {
   font-size: 1.25rem;
   color: var(--title-color);
   margin-right: var(--mb-1);
   cursor: pointer;
 }
 
-.change-theme:hover{
+.change-theme:hover {
   color: var(--first-color)
 }
 
@@ -386,7 +388,7 @@ img {
 
 .button--white:hover {
   color: #fff;
-  
+
 }
 
 .button--flex {
@@ -1007,19 +1009,19 @@ img {
 }
 
 /*========== SCROLL BAR ==========*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: .60rem;
   background-color: var(--scroll-bar-color);
   border-radius: .5rem;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb-color);
   border-radius: .5rem;
   transition: .3s;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background-color: #fff;
 }
 
