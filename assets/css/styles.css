@@ -18,7 +18,7 @@
   --title-color:  hsl(var(--hue-color), 15%, 15%);
   --text-color: hsl(var(--hue-color), 10%, 30%);
   --text-color-light: rgba(39, 39, 39, 0);
-  --input-color: hsl(var(--hue-color), 41%, 90%);
+  --input-color: hsl(var(--hue-color), 70%, 80%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
@@ -71,9 +71,17 @@
 }
 
 /*========== Variables Dark theme ==========*/
-/* body.dark-theme{
+body.dark-theme{
   /* CORES */
-  
+  --first-color-second: hsl(var(--hue-color), 90%, 10%);
+  --color-details: #ffffff;
+  --title-color:  hsl(var(--hue-color), 10%, 90%);
+  --text-color: hsl(var(--hue-color), 10%, 90%);
+  --input-color: hsl(var(--hue-color), 90%, 80%);
+  --body-color: hsl(var(--hue-color), 5%, 5%);
+  --container-color: hsl(var(--hue-color), 10%, 10%);;
+
+}
 
 
 /*========== Button Dark/Light ==========*/
@@ -225,7 +233,7 @@ img {
   flex-direction: column;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: var(--first-color-second);
   font-weight: var(--font-medium);
 }
 
@@ -378,6 +386,7 @@ img {
 
 .button--white:hover {
   color: #fff;
+  
 }
 
 .button--flex {
@@ -654,8 +663,9 @@ img {
 
 .services__icon {
   display: block;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: var(--mb-1);
+  color: var(--first-color);
 }
 
 .services__title {
@@ -801,7 +811,7 @@ img {
 }
 
 .project__bg {
-  background-color: var(--first-color-second);
+  background-color: var(--first-color);
   padding-top: 3rem;
 }
 
@@ -892,7 +902,7 @@ img {
 }
 
 .contact__content {
-  /* background-color: var(--input-color); */
+  background-color: var(--input-color);
   border-radius: .5rem;
   padding: .75rem 1rem .25rem;
 }
@@ -900,12 +910,13 @@ img {
 .contact__label {
   font-size: var(--smaller-font-size);
   color: var(--title-color);
+  font-weight: var(--font-medium);
 }
 
 .contact__input {
   width: 100%;
-  /* background-color:rgba(156, 156, 156, 0); */
-  font-family: var(--body-color);
+  background-color: var(--input-color);
+  font-weight: var(--font-medium);
   outline: none;
   border: none;
   padding: .25rem .5rem .5rem 0;
