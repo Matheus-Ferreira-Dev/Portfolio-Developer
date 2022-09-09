@@ -221,6 +221,7 @@ img {
     background-color: #fff;
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    border-radius: 5px;
   }
 }
 
@@ -1052,7 +1053,6 @@ img {
     width: 180px;
   }
 
-
   .skills__title {
     font-size: var(--normal-font-size);
     text-align: center;
@@ -1087,6 +1087,10 @@ img {
     width: 200px;
   }
 
+  .project__bg{
+    width: 100%;
+  }
+  
   .testimonial__data,
   .testimonial__header {
     flex-direction: column;
