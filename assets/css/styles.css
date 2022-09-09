@@ -1027,7 +1027,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media (max-width: 350px) {
+@media (max-width: 425px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
