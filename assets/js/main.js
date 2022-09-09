@@ -179,7 +179,8 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-mo
 if (selectedTheme) {
     // valida o clique no botão através da classe
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](iconTheme)
+    document.body.classList[selectedTheme === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+    
 }
 
 //Ativa ou desativa o tema manualmente com o botão
