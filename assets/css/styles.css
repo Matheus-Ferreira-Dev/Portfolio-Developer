@@ -1028,44 +1028,74 @@ img {
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media (max-width: 350px) {
-  .container{
+  .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
 
-  .nav__menu{
+  .nav__menu {
     padding: 2rem .25rem 4rem;
     width: 100%;
   }
 
-  .nav__list{
+  .nav__list {
     column-gap: 0;
   }
 
-  .home__content{
+  .home__content {
     grid-template-columns: .25fr 3fr;
     padding: 0;
   }
 
-  .home__blob{
+  .home__blob {
     width: 180px;
   }
-  
-  
-  .skills__title{
+
+
+  .skills__title {
     font-size: var(--normal-font-size);
     text-align: center;
   }
 
-  .qualification__data{
+  .qualification__data {
     gap: .5rem;
   }
 
-  .services__container{
+  .swiper-pagination {
+    margin-left: 100px;
+  }
+
+  .swiper-pagination-testimonial {
+    margin-left: 0;
+  }
+
+  .services__container {
     grid-template-columns: max-content;
     justify-content: center;
   }
 
+  .services__content {
+    padding-right: 3.5rem;
+  }
+
+  .services__modal {
+    padding: 0 .5rem;
+  }
+
+  .project__img {
+    width: 200px;
+  }
+
+  .testimonial__data,
+  .testimonial__header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__img{
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 /* For medium devices */
