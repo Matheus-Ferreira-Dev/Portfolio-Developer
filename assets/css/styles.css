@@ -1029,7 +1029,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1087,9 +1087,6 @@ img {
     width: 200px;
   }
 
-  .project__bg{
-    width: 100%;
-  }
   
   .testimonial__data,
   .testimonial__header {
