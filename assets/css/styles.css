@@ -1358,4 +1358,23 @@ grid-template-columns: .5fr;
 .swiper-portfolio-icon{
   font-size: 3.5rem;
 }
+.swiper-button-prev{
+  left: -3.5rem;
+}
+
+.swiper-button-next{
+  right: -3.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullet{
+  bottom: -4rem;
+}
+
+.contact__form{
+  width: 460px;
+}
+
+.contact__inputs{
+grid-template-columns: repeat(2, 1fr);
+}
 }
