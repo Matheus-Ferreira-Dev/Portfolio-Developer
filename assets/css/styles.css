@@ -1118,6 +1118,10 @@ img {
     grid-template-columns: max-content;
     justify-content: center;
   }
+
+  .qualification__data {
+    gap: .5rem;
+  }
 }
 
 /* For medium devices */
