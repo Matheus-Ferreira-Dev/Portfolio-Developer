@@ -1113,7 +1113,7 @@ img {
   }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 400px){
   .services__container{
     grid-template-columns: max-content;
     justify-content: center;
