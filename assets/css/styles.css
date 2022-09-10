@@ -1113,6 +1113,13 @@ img {
   }
 }
 
+@media screen and (max-width: 425px){
+  .services__content{
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+}
+
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .home__content {
@@ -1385,4 +1392,9 @@ img {
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .services__content{
+    align-self: center;
+  }
+
 }
