@@ -1113,17 +1113,6 @@ img {
   }
 }
 
-@media screen and (max-width: 400px){
-  .services__container{
-    grid-template-columns: max-content;
-    justify-content: center;
-  }
-
-  .qualification__data {
-    gap: .5rem;
-  }
-}
-
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .home__content {
