@@ -382,7 +382,7 @@ img {
 
 .button:hover {
   background-color: var(--first-color-second);
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 .button__icon {
