@@ -3,7 +3,7 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-  --header-height: 3rem;
+  --header-height: 4rem;
 
   /*========== Colors ==========*/
   /* Change favorite color */
@@ -24,6 +24,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 70%, 50%);
   --scroll-thumb-color: hsl(var(--hue-color), 30%, 20%);
+  --logo-color: hsl(var(--hue-color), 30%, 20%);
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -193,6 +194,12 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
+.nav__logo{
+ font-size: 26px;
+ font-weight: bold;
+}
+
 
 .nav__logo,
 .nav__toggle {
@@ -375,6 +382,7 @@ img {
 
 .button:hover {
   background-color: var(--first-color-second);
+  transform: scale(1.05);
 }
 
 .button__icon {
@@ -1386,7 +1394,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .services__content{
+  .services__content {
     align-self: center;
   }
 
